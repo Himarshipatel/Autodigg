@@ -36,9 +36,9 @@ const Home = () => {
   };
   return (
     <Layout>
-      <div className="home">
-        <Header />
-        <Container className="main-banner">
+      {/* <div className="home">
+        <Header /> */}
+      {/* <Container className="main-banner">
           <Row className="banner">
             <Col className="ban-left">
               <h1 className="title">
@@ -148,12 +148,12 @@ const Home = () => {
               </Row>
             </Col>
           </Row>
-        </Container>
-        {/* -------------------what Defriantiate us from our compititor?----------------- */}
+        </Container> */}
+      {/* -------------------what Defriantiate us from our compititor?----------------- */}
 
-        {/* -------------------what Defriantiate us from our compititor?----------------- */}
-      </div>
-      <Container fluid={true} className="work">
+      {/* -------------------what Defriantiate us from our compititor?----------------- */}
+      {/* </div> */}
+      {/* <Container fluid={true} className="work">
         <Row>
           <Col className="work-title">How Does It Work?</Col>
         </Row>
@@ -206,8 +206,8 @@ const Home = () => {
             <img src={panel5} alt="" />
           </Col>
         </Row>
-      </Container>
-      <Container fluid={true}>
+      </Container> */}
+      {/* <Container fluid={true}>
         <Row>
           <Col className="deff-title">
             {" "}
@@ -247,8 +247,8 @@ const Home = () => {
             <br />- No pressure, walk away anytime without any obligation.
           </Col>
         </Row>
-      </Container>
-      <Container fluid={true}>
+      </Container> */}
+      {/* <Container fluid={true}>
         <Row className="login-reg">
           <Col md="6" className="login">
             <Col className="dealer-title">DEALER</Col>
@@ -263,6 +263,7 @@ const Home = () => {
                       type="text"
                       name="name"
                       defaultValue=""
+                      className="reg-message"
                       control={control}
                       ref={register}
                     />
@@ -282,6 +283,7 @@ const Home = () => {
                       type="password"
                       name="name"
                       defaultValue=""
+                      className="reg-message"
                       control={control}
                       ref={register}
                     />
@@ -309,6 +311,7 @@ const Home = () => {
                         type="text"
                         name="namee"
                         defaultValue=""
+                        className="reg-message"
                         control={control}
                         ref={register}
                       />
@@ -330,6 +333,7 @@ const Home = () => {
                         type="text"
                         name="name"
                         defaultValue=""
+                        className="reg-message"
                         control={control}
                         ref={register}
                       />
@@ -351,6 +355,7 @@ const Home = () => {
                         type="password"
                         name="name"
                         defaultValue=""
+                        className="reg-message"
                         control={control}
                         ref={register}
                       />
@@ -367,7 +372,7 @@ const Home = () => {
             </Col>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
       <Container fluid={true}>
         <Row className="contact">
           <Col className="contact-us">Contact Us</Col>
@@ -383,6 +388,7 @@ const Home = () => {
                     type="password"
                     name="name"
                     defaultValue=""
+                    className="message"
                     control={control}
                     ref={register}
                   />
@@ -399,6 +405,7 @@ const Home = () => {
                     type="password"
                     name="name"
                     defaultValue=""
+                    className="message"
                     control={control}
                     ref={register}
                   />
@@ -415,6 +422,7 @@ const Home = () => {
                     type="password"
                     name="name"
                     defaultValue=""
+                    className="message"
                     control={control}
                     ref={register}
                   />
@@ -425,7 +433,7 @@ const Home = () => {
               </Col>
             </Row>
             <Row>
-              <Col className="inputt" md="11">
+              <Col className="inputt">
                 <FormGroup>
                   <Controller
                     placeholder="Your message*"
@@ -435,6 +443,7 @@ const Home = () => {
                     defaultValue=""
                     control={control}
                     ref={register}
+                    className="messages"
                   />
                   {errors && errors.name && (
                     <span className="text-danger">{errors.name.message}</span>
@@ -442,7 +451,7 @@ const Home = () => {
                 </FormGroup>
               </Col>
             </Row>
-            <Button className="signin">SEND MESSAGE</Button>
+            <Button className="send-message">SEND MESSAGE</Button>
           </Form>
         </Row>
       </Container>
