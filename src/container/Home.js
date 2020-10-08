@@ -36,9 +36,9 @@ const Home = () => {
   };
   return (
     <Layout>
-      {/* <div className="home">
-        <Header /> */}
-      {/* <Container className="main-banner">
+      <div className="home">
+        <Header />
+        <Container className="main-banner">
           <Row className="banner">
             <Col className="ban-left">
               <h1 className="title">
@@ -148,11 +148,8 @@ const Home = () => {
               </Row>
             </Col>
           </Row>
-        </Container> */}
-      {/* -------------------what Defriantiate us from our compititor?----------------- */}
-
-      {/* -------------------what Defriantiate us from our compititor?----------------- */}
-      {/* </div> */}
+        </Container>
+      </div>
       {/* <Container fluid={true} className="work">
         <Row>
           <Col className="work-title">How Does It Work?</Col>
@@ -207,7 +204,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container> */}
-      {/* <Container fluid={true}>
+      <Container fluid={true}>
         <Row>
           <Col className="deff-title">
             {" "}
@@ -218,37 +215,40 @@ const Home = () => {
           <Col className="deff-subtitle">WHY US?</Col>
         </Row>
         <Row className="icon">
-          <Col>
+          <Col md="4">
             <img src={icon1} alt="" />
-            <br />
-            <br />
-            Privacy Control
-            <br />
-            - You decide when to share your contact details and with whom.
-            <br />- We don't share or sell your personal information with
-            anyone.
+            <h4 className="control">Privacy Control</h4>
+            <h6 className="description">
+              - You decide when to share your contact details and with whom.
+            </h6>
+            <h6 className="description">
+              - We don't share or sell your personal information with anyone.
+            </h6>
           </Col>
-          <Col>
-            <img src={icon2} alt="" /> <br />
-            <br />
-            Go Right to the Source
-            <br />
-            - Connect directly with local Dealerships.
-            <br />- Communicate directly in real time.
+          <Col md="4">
+            <img src={icon2} alt="" />
+            <h4 className="control">Go Right to the Source</h4>
+            <h6 className="description">
+              - Connect directly with local Dealerships.
+            </h6>
+            <h6 className="description">
+              - Communicate directly in real time.
+            </h6>
           </Col>
-          <Col>
+          <Col md="4">
             <img src={icon3} alt="" />
-            <br />
-            <br />
-            Personalized, Fair and Free
-            <br />- AutoDigg is open, fair, and free.
-            <br /> - Receive personalized offer rather than redundant list of
-            cars.
-            <br />- No pressure, walk away anytime without any obligation.
+            <h4 className="control">Personalized, Fair and Free</h4>
+            <h6 className="description">- AutoDigg is open, fair, and free.</h6>
+            <h6 className="description">
+              - Receive personalized offer rather than redundant list of cars.
+            </h6>
+            <h6 className="description">
+              - No pressure, walk away anytime without any obligation.
+            </h6>
           </Col>
         </Row>
-      </Container> */}
-      {/* <Container fluid={true}>
+      </Container>
+      <Container fluid={true}>
         <Row className="login-reg">
           <Col md="6" className="login">
             <Col className="dealer-title">DEALER</Col>
@@ -367,12 +367,13 @@ const Home = () => {
                     </FormGroup>
                   </Col>
                 </Row>
+
                 <Button className="signin">SIGN UP</Button>
               </Form>
             </Col>
           </Col>
         </Row>
-      </Container> */}
+      </Container>
       <Container fluid={true}>
         <Row className="contact">
           <Col className="contact-us">Contact Us</Col>

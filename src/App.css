@@ -197,10 +197,11 @@
   background-image: url(./images/home-sellers-bg.jpg);
 }
 .dealer-title {
-  letter-spacing: 5px;
+  font-family: sans-serif;
+  letter-spacing: 0.3em;
   padding-top: 50px;
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 54px;
+  font-weight: 400;
 
   color: white;
 }
@@ -210,7 +211,9 @@
   margin-top: 40px;
 }
 .signin {
+  width: 50%;
   margin-top: 20px;
+  font-family: Roboto, sans-serif;
   font-size: 12px !important;
   font-weight: 600 !important;
   border: none !important;
@@ -236,12 +239,13 @@
   margin-top: 50px;
   color: black;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 34px;
+  font-family: Helvetica;
+  text-transform: capitalize;
+  letter-spacing: 3px;
 }
 .form {
   width: 95vw;
-}
-.inputt {
 }
 .footer {
   width: 100vw;
@@ -309,4 +313,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+input.reg-message::placeholder {
+  color: white;
+  opacity: 1;
+}
+.control {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.description {
+  margin-bottom: 17px;
+  font-size: 13px;
+  color: #4a4a4a;
 }
