@@ -1,0 +1,26 @@
+function showCustomSnackbar(type, message) {
+    if (typeof type !== "undefined" && typeof message !== "undefined") {
+        if (type) {
+            Snackbar.show({
+                pos: 'bottom-left',
+                textColor: '#ffffff',
+                backgroundColor: '#337e03',
+                text: message,
+                actionText: 'X',
+                actionTextColor: '#ffffff',
+                duration: '8000',
+            });
+        } else {
+            Snackbar.show({
+                pos: 'bottom-left',
+                textColor: '#ffffff',
+                backgroundColor: '#ae0c0c',
+                text: message,
+                actionText: 'X',
+                actionTextColor: '#ffffff',
+                duration: '8000'
+            });
+        }
+
+    }
+}

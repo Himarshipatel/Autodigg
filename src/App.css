@@ -36,3 +36,237 @@
     transform: rotate(360deg);
   }
 }
+.menubar {
+  color: white;
+  /* background-color: #2a3c46; */
+  background-color: transparent !important;
+}
+.menulist {
+  font-size: 12px;
+  color: #ffffff;
+}
+.sign-in-register {
+  font-size: 12px;
+  padding: 1em;
+  color: white;
+  border: 1px solid white;
+}
+.blog {
+  border: 1px solid white;
+}
+.submenu {
+  color: white;
+}
+.home {
+  background-image: url(./images/banner-bg.jpg);
+  height: 100%;
+}
+.back {
+  width: 100%;
+}
+.banner {
+  text-align: center;
+  padding-top: 30px;
+
+  margin-top: 50px;
+}
+.ban-left {
+}
+.ban-right {
+  height: 600px;
+  background-color: #35444e;
+}
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  margin-top: 10px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.subtitle {
+  text-align: left;
+  color: #ff700a;
+  font-size: 17px;
+  font-weight: 600;
+}
+.you-tube {
+  padding-top: 50px;
+  text-align: left;
+}
+.video {
+  display: none;
+}
+.car-search-title {
+  text-align: left;
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+.car-search {
+  width: 200px;
+  height: 50px;
+  border-radius: 0px;
+}
+.dropdown {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.dropdownn {
+  margin-top: 50px;
+}
+.indicate {
+  margin-top: 50px;
+  color: white;
+  text-align: left;
+}
+.get-started {
+  width: 100%;
+  font-size: 14px !important;
+  background-color: #ff700a !important;
+  font-weight: 700 !important;
+}
+.get-start {
+  margin-top: 50px;
+}
+.deff-title {
+  margin-top: 50px;
+  text-align: center;
+}
+.deff-subtitle {
+  color: gray;
+}
+.icon {
+  margin-top: 50px;
+}
+.work {
+  height: 920px;
+  background-color: #f8f8f8;
+}
+.work-title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #1e1e1e;
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0;
+  text-align: center;
+}
+.working {
+  padding: 10px;
+  margin-left: 90px !important;
+  background-color: white;
+  width: 55%;
+}
+.working-info {
+  padding: 10px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 180px !important;
+  background-color: white;
+  width: 55%;
+}
+.working-off {
+  margin-top: 30px;
+  padding: 20px;
+  float: left;
+  margin-left: 90px !important;
+  background-color: white;
+  width: 55%;
+}
+.working-connect {
+  padding: 20px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 180px !important;
+  background-color: white;
+  width: 55%;
+}
+.login-reg {
+  padding-top: 50px;
+  background-color: #f8f8f8;
+}
+.register {
+  height: 500px;
+  background-image: url(./images/home-buyers-bg.jpg);
+}
+.login {
+  height: 500px;
+  background-image: url(./images/home-sellers-bg.jpg);
+}
+.dealer-title {
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: 600;
+
+  color: white;
+}
+.input {
+  background: transparent !important;
+  border: none;
+  margin-top: 40px;
+}
+.signin {
+  margin-top: 20px;
+  font-weight: bold !important;
+  width: 347px;
+  background-color: #ff700a !important;
+}
+.forget {
+  margin-top: 30px;
+  color: white;
+}
+.contact {
+  background-color: #f8f8f8;
+}
+.contact-form {
+  background-color: #f8f8f8;
+}
+.contact-us {
+  margin-top: 50px;
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+}
+.form {
+  margin-left: 30px !important;
+  margin-top: 20px;
+  width: 95vw;
+}
+.inputt {
+  margin-left: 45px;
+}
+.footer {
+  width: 100vw;
+  background-color: #232323;
+}
+.map {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.foot-sub-title {
+  font-size: 15px;
+  color: white;
+}
+.social {
+  margin-left: 5px;
+}
+.copy-right {
+  color: white;
+  font-size: 14px;
+}
+.footer-menu {
+  color: white;
+  text-align: center;
+}
+.question {
+  color: white;
+  text-decoration: underline;
+}
+.question:hover {
+  color: white;
+}
