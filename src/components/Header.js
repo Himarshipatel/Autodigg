@@ -8,14 +8,11 @@ import {
   NavItem,
   NavLink,
   NavbarText,
-  Button,
   Col,
-  Row,
 } from "reactstrap";
-import { SocialIcon } from "react-social-icons";
 
 import logo from "../images/logo-autodigg-50x33.png";
-const Header = (props) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -60,9 +57,6 @@ const Header = (props) => {
           </NavLink>
 
           <NavbarText>
-            {/* <Col className="blog">BLOG</Col>
-            <Col className="blog">DEALERS</Col> */}
-
             <Col className="sign-in-register">SIGN IN/REGISTER</Col>
           </NavbarText>
         </Collapse>

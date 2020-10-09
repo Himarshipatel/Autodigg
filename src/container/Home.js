@@ -1,10 +1,8 @@
 import React from "react";
-import { Col, Container, Row, Input, Label, Form, FormGroup } from "reactstrap";
+import { Col, Container, Row, Input, Form, FormGroup } from "reactstrap";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
-import { SocialIcon } from "react-social-icons";
-import { Link } from "react-router-dom";
-import * as yup from "yup";
+//import * as yup from "yup";
 import { useForm, Controller } from "react-hook-form";
 import {
   UncontrolledDropdown,
@@ -13,7 +11,6 @@ import {
   DropdownItem,
   Button,
 } from "reactstrap";
-import { Nav, NavLink, NavItem } from "reactstrap";
 
 import icon1 from "../images/icon_01.png";
 import icon2 from "../images/icon_02.png";
@@ -23,12 +20,10 @@ import panel2 from "../images/panels-icon-2.png";
 import panel3 from "../images/panels-icon-3.png";
 import panel4 from "../images/panels-icon-4.png";
 import panel5 from "../images/panels-icon-5.png";
-import dealer from "../images/home-sellers-bg.jpg";
-import buyer from "../images/home-buyers-bg.jpg";
 //import { yupResolver } from "@hookform/resolvers";
-const formSchema = yup.object().shape({
-  name: yup.string().required("*Name is Required"),
-});
+// const formSchema = yup.object().shape({
+//   name: yup.string().required("*Name is Required"),
+// });
 const Home = () => {
   const { control, register, handleSubmit, errors } = useForm({});
   const onSubmit = (data) => {
@@ -59,6 +54,7 @@ const Home = () => {
                     allowfullscreen=""
                     width="85%"
                     height="243px"
+                    title="video"
                     src="https://www.youtube.com/embed/SDFUmf8otfc?rel=0&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;autoplay=1"
                   ></iframe>
                 </div>
