@@ -150,64 +150,65 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      {/* <Container fluid={true} className="work">
-        <Row>
-          <Col className="work-title">How Does It Work?</Col>
-        </Row>
-        <Row className="working">
-          <Col>
-            <h4>Select Car Preference</h4>
-            <p>Provide your car type, make, model and other preferences.</p>
-          </Col>
-          <Col>
-            <img src={panel1} alt="" />
-          </Col>
-        </Row>
+      <div className="work">
+        <Container fluid={true}>
+          <Row>
+            <Col className="work-title">How Does It Work?</Col>
+          </Row>
+          <Row className="working">
+            <Col>
+              <h4>Select Car Preference</h4>
+              <p>Provide your car type, make, model and other preferences.</p>
+            </Col>
+            <Col className="panel">
+              <img src={panel1} alt="" />
+            </Col>
+          </Row>
 
-        <Row className="working-info">
-          <Col>
-            <img src={panel2} alt="" />
-          </Col>
-          <Col>
-            <h4>Information Broadcast</h4>
-            <p>
-              Preferences are sent to dealers without sharing your contact
-              information.
-            </p>
-          </Col>
-        </Row>
-        <Row className="working-off">
-          <Col>
-            <h4>Personalized Offer</h4>
-            <p>Receive multiple bids from the Dealers.</p>
-          </Col>
-          <Col>
-            <img src={panel3} alt="" />
-          </Col>
-        </Row>
-        <Row className="working-connect">
-          <Col>
-            <img src={panel4} alt="" />
-          </Col>
-          <Col>
-            <h4>Connect And Communicate</h4>
-            <p>Read offer details, chat and negotiate.</p>
-          </Col>
-        </Row>
-        <Row className="working-off">
-          <Col>
-            <h4>Exchange Contact Infromation</h4>
-            <p>Like the bid and schedule a test drive.</p>
-          </Col>
-          <Col>
-            <img src={panel5} alt="" />
-          </Col>
-        </Row>
-      </Container> */}
+          <Row className="working-info">
+            <Col>
+              <img src={panel2} alt="" />
+            </Col>
+            <Col>
+              <h4>Information Broadcast</h4>
+              <p>
+                Preferences are sent to dealers without sharing your contact
+                information.
+              </p>
+            </Col>
+          </Row>
+          <Row className="working-off">
+            <Col>
+              <h4>Personalized Offer</h4>
+              <p>Receive multiple bids from the Dealers.</p>
+            </Col>
+            <Col>
+              <img src={panel3} alt="" />
+            </Col>
+          </Row>
+          <Row className="working-connect">
+            <Col>
+              <img src={panel4} alt="" />
+            </Col>
+            <Col>
+              <h4>Connect And Communicate</h4>
+              <p>Read offer details, chat and negotiate.</p>
+            </Col>
+          </Row>
+          <Row className="working-off">
+            <Col>
+              <h4>Exchange Contact Infromation</h4>
+              <p>Like the bid and schedule a test drive.</p>
+            </Col>
+            <Col>
+              <img src={panel5} alt="" />
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <Container fluid={true}>
         <Row>
           <Col className="deff-title">
-            {" "}
             <h2>What Differentiates us from our Competitors?</h2>
           </Col>
         </Row>

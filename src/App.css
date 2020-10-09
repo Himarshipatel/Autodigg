@@ -60,6 +60,8 @@
 .home {
   background-image: url(./images/banner-bg.jpg);
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .back {
   width: 100%;
@@ -70,9 +72,9 @@
 
   margin-top: 50px;
 }
-.ban-left {
-}
 .ban-right {
+  font-family: sans-serif;
+  margin-bottom: 30px;
   background-color: #35444e;
 }
 .title {
@@ -99,9 +101,18 @@
 .car-search-title {
   text-align: left;
   margin-top: 50px;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .car-search-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+  }
 }
 .car-search {
   width: 200px;
@@ -120,8 +131,17 @@
   color: white;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .indicate {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+  }
+}
 .get-started {
   width: 100%;
+  margin-bottom: 20px;
   font-size: 14px !important;
   background-color: #ff700a !important;
   font-weight: 700 !important;
@@ -153,19 +173,106 @@
   margin: 0;
   text-align: center;
 }
+.panel {
+  margin-top: 30px;
+}
 .working {
   padding: 10px;
-  margin-left: 90px !important;
+  margin-left: 80px !important;
   background-color: white;
   width: 55%;
+  border: 1px solid black;
 }
+@media screen and (max-width: 768px) {
+  .working {
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 320px) {
+  .work-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #1e1e1e;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+    text-align: center;
+  }
+  .working {
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+  }
+}
+.working-per {
+}
+@media screen and (max-width: 1024px) {
+  .working {
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+  }
+  .work {
+    height: 1100px;
+    background-color: #f8f8f8;
+  }
+}
+@media screen and (max-width: 768px) {
+  .working {
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+  }
+  .work {
+    height: 1200px;
+    background-color: #f8f8f8;
+  }
+}
+@media screen and (max-width: 425px) {
+  .working {
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+  }
+  .work {
+    height: 1600px;
+    background-color: #f8f8f8;
+  }
+}
+@media screen and (max-width: 375px) {
+  .working {
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+  }
+  .work {
+    height: 1700px;
+    background-color: #f8f8f8;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .working {
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+  }
+  .work {
+    height: 1900px;
+    background-color: #f8f8f8;
+  }
+}
+
 .working-info {
   padding: 10px;
   float: right;
   margin-top: 30px;
-  margin-right: 180px !important;
+  margin-right: 130px !important;
   background-color: white;
-  width: 55%;
+  width: 60%;
 }
 .working-off {
   margin-top: 30px;
