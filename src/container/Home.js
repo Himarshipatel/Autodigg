@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row, Input, Form, FormGroup } from "reactstrap";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
+import Works from "./Works";
 //import * as yup from "yup";
 import { useForm, Controller } from "react-hook-form";
 import {
@@ -15,11 +16,6 @@ import {
 import icon1 from "../images/icon_01.png";
 import icon2 from "../images/icon_02.png";
 import icon3 from "../images/icon_03.png";
-import panel1 from "../images/panels-icon-1.png";
-import panel2 from "../images/panels-icon-2.png";
-import panel3 from "../images/panels-icon-3.png";
-import panel4 from "../images/panels-icon-4.png";
-import panel5 from "../images/panels-icon-5.png";
 //import { yupResolver } from "@hookform/resolvers";
 // const formSchema = yup.object().shape({
 //   name: yup.string().required("*Name is Required"),
@@ -30,7 +26,7 @@ const Home = () => {
     console.log(data);
   };
   return (
-    <Layout>
+    <Layout className="layout">
       <div className="home">
         <Header />
         <Container className="main-banner">
@@ -146,62 +142,7 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <div className="work">
-        <Container fluid={true}>
-          <Row>
-            <Col className="work-title">How Does It Work?</Col>
-          </Row>
-          <Row className="working">
-            <Col>
-              <h4>Select Car Preference</h4>
-              <p>Provide your car type, make, model and other preferences.</p>
-            </Col>
-            <Col className="panel">
-              <img src={panel1} alt="" />
-            </Col>
-          </Row>
-
-          <Row className="working-info">
-            <Col>
-              <img src={panel2} alt="" />
-            </Col>
-            <Col>
-              <h4>Information Broadcast</h4>
-              <p>
-                Preferences are sent to dealers without sharing your contact
-                information.
-              </p>
-            </Col>
-          </Row>
-          <Row className="working-off">
-            <Col>
-              <h4>Personalized Offer</h4>
-              <p>Receive multiple bids from the Dealers.</p>
-            </Col>
-            <Col>
-              <img src={panel3} alt="" />
-            </Col>
-          </Row>
-          <Row className="working-connect">
-            <Col>
-              <img src={panel4} alt="" />
-            </Col>
-            <Col>
-              <h4>Connect And Communicate</h4>
-              <p>Read offer details, chat and negotiate.</p>
-            </Col>
-          </Row>
-          <Row className="working-off">
-            <Col>
-              <h4>Exchange Contact Infromation</h4>
-              <p>Like the bid and schedule a test drive.</p>
-            </Col>
-            <Col>
-              <img src={panel5} alt="" />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <Works />
       <Container fluid={true}>
         <Row>
           <Col className="deff-title">

@@ -23,7 +23,9 @@ const Header = () => {
         <NavbarBrand href="/">
           <img src={logo} alt="" className="logo" />
         </NavbarBrand>
+
         <NavbarToggler onClick={toggle} />
+
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>

@@ -190,6 +190,13 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .working-connect {
+    padding: 20px;
+    float: right !important;
+    margin-top: 30px;
+
+    background-color: white;
+  }
   .work-title {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -232,6 +239,8 @@
 }
 @media screen and (max-width: 425px) {
   .working {
+    float: right;
+    margin-left: 50px !important;
     padding: 10px;
     font-size: 12px;
     background-color: white;
@@ -259,7 +268,7 @@
 
     margin-top: 30px;
 
-    background-color: white;
+    background-color: red;
   }
   .working {
     padding: 10px;
@@ -296,6 +305,82 @@
   background-color: white;
   width: 55%;
 }
+
+@media screen and (max-width: 320px) {
+  .reverse {
+    order: 2;
+  }
+  .menubar {
+    background-color: white;
+  }
+  .working {
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-right: 50px !important;
+    background-color: white;
+    width: 60%;
+  }
+  .working-connect {
+    padding: 20px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px !important;
+    background-color: white;
+    width: 70%;
+  }
+  .working-info {
+    padding: 20px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px !important;
+    background-color: white;
+    width: 60%;
+  }
+  .working-off {
+    margin-top: 30px;
+    padding: 20px;
+
+    margin-left: 65px !important;
+    background-color: white;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .working {
+    padding: 20px;
+
+    margin-top: 30px;
+    margin-right: 80px !important;
+    background-color: white;
+    width: 60%;
+  }
+  .working-connect {
+    padding: 20px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 60px !important;
+    background-color: white;
+    width: 70%;
+  }
+  .working-info {
+    padding: 20px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px !important;
+    background-color: white;
+    width: 60%;
+  }
+  .working-off {
+    margin-top: 30px;
+    padding: 20px;
+
+    margin-left: 60px !important;
+    background-color: white;
+    width: 60%;
+  }
+}
+
 .login-reg {
   padding-top: 50px;
   background-color: #f8f8f8;
@@ -441,4 +526,65 @@ input.reg-message::placeholder {
   margin-bottom: 17px;
   font-size: 13px;
   color: #4a4a4a;
+}
+/* ------------------------------------------- */
+.work-title {
+  color: #1e1e1e;
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin: 0;
+  text-align: center !important;
+
+  text-transform: capitalize;
+}
+.main-work {
+  padding-bottom: 50px;
+  background-color: #f8f8f8;
+}
+.work-left {
+  padding-top: 10px;
+  background-color: white;
+}
+.work-right {
+  padding-top: 20px;
+  background-color: white;
+}
+.work-row {
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+.work-left1 {
+  padding-top: 10px;
+  background-color: white;
+}
+.work-right1 {
+  padding-top: 10px;
+  background-color: white;
+}
+.work-subtitle {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #1e1e1e;
+}
+.content {
+  font-size: 16px;
+}
+.panel2 {
+  margin-top: 5px;
+}
+.work-left3 {
+  padding-top: 20px;
+  background-color: white;
+}
+.work-right3 {
+  padding-top: 20px;
+  background-color: white;
+}
+.panel3 {
+}
+.worked {
+  border: 1px solid black;
 }
