@@ -20,8 +20,9 @@ const Works = () => {
               </p>
             </Col>
             <Col className="work-right" md="4">
-              <img src={panel1} alt="" />
+              <img src={panel1} alt="" className="panel1" />
             </Col>
+            <Col md="4"></Col>
           </Row>
           <Row className="work-row">
             <Col md="4"></Col>

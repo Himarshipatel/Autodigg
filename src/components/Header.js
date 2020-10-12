@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Collapse,
   Navbar,
@@ -16,7 +16,40 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+  // const [navBackground, setNavBackground] = useState(true);
+  // const [text, setText] = useState(false);
+  // const navRef = useRef();
+  // const navRefe = useRef();
 
+  // navRef.current = navBackground;
+  // navRefe.current = text;
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const show = window.scrollY < 70;
+  //     if (navRef.current !== show) {
+  //       setNavBackground(show);
+  //       // setText(show);
+  //     }
+  //   };
+  //   document.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const show = window.scrollY > 70;
+  //     if (navRefe.current !== show) {
+  //       setText(show);
+  //     }
+  //   };
+  //   document.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <div className="home-page">
       <Navbar expand="md" className="menubar">

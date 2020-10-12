@@ -24,14 +24,17 @@ const Footer = () => {
             <SocialIcon
               url="https://www.facebook.com/autodigg"
               className={"social"}
+              target="_blank"
             />
             <SocialIcon
               url="https://twitter.com/autodigg"
               className={"social"}
+              target="_blank"
             />
             <SocialIcon
               url="https://www.instagram.com/autodigg/"
               className={"social"}
+              target="_blank"
             />
           </Col>
         </Row>
@@ -46,6 +49,7 @@ const Footer = () => {
               <NavLink
                 href="https://www.autodigg.com/frequently-asked-questions"
                 className="question"
+                target="_blank"
               >
                 Frequently Asked Questions
               </NavLink>
