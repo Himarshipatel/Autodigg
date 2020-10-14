@@ -40,7 +40,7 @@ const Login = () => {
                 defaultValue=""
                 className="reg-message"
                 control={control}
-                ref={register}
+                refs={register}
               />
               {errors && errors.email && (
                 <span className="text-white">{errors.email.message}</span>
@@ -60,7 +60,7 @@ const Login = () => {
                 defaultValue=""
                 className="reg-message"
                 control={control}
-                ref={register}
+                refs={register}
               />
               {errors && errors.password && (
                 <span className="text-white">{errors.password.message}</span>

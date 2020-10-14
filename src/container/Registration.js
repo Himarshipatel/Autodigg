@@ -40,7 +40,7 @@ const Registration = () => {
                 defaultValue=""
                 className="reg-message"
                 control={control}
-                ref={register}
+                refs={register}
               />
               {errors && errors.name && (
                 <span className="text-white">{errors.name.message}</span>
@@ -60,7 +60,7 @@ const Registration = () => {
                 defaultValue=""
                 className="reg-message"
                 control={control}
-                ref={register}
+                refs={register}
               />
               {errors && errors.email && (
                 <span className="text-white">{errors.email.message}</span>
@@ -80,7 +80,7 @@ const Registration = () => {
                 defaultValue=""
                 className="reg-message"
                 control={control}
-                ref={register}
+                refs={register}
               />
               {errors && errors.password && (
                 <span className="text-white">{errors.password.message}</span>

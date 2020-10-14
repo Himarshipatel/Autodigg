@@ -95,7 +95,7 @@
   font-weight: 600;
 }
 .you-tube {
-  padding-top: 50px;
+  padding-top: 10px;
   text-align: left;
 }
 .video {
@@ -118,6 +118,7 @@
   }
 }
 .car-search {
+  background-color: #31404a;
   width: 200px;
   height: 50px;
   border-radius: 0px;
@@ -616,5 +617,31 @@ input.reg-message::placeholder {
     order: -1;
     padding-top: 20px;
     background-color: white;
+  }
+}
+.car-search-in {
+  padding: 0 15px;
+  height: 50px !important;
+  line-height: 50px;
+  width: 100%;
+  margin-top: 1.2rem;
+  background: #31404a !important;
+  font-size: 13px;
+  color: #ffffff !important;
+  border: none !important;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .tog-icon {
+    border: 1px solid black !important;
+  }
+  .menulist {
+    color: black;
+  }
+  .sign-in-register {
+    color: black;
+    border: 1px solid black;
   }
 }

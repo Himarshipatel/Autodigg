@@ -40,7 +40,7 @@ const ContactUs = () => {
                   defaultValue=""
                   className="message"
                   control={control}
-                  ref={register}
+                  refs={register}
                 />
                 {errors && errors.name && (
                   <span className="text-danger">{errors.name.message}</span>
@@ -57,7 +57,7 @@ const ContactUs = () => {
                   defaultValue=""
                   className="message"
                   control={control}
-                  ref={register}
+                  refs={register}
                 />
                 {errors && errors.email && (
                   <span className="text-danger">{errors.email.message}</span>
@@ -74,7 +74,7 @@ const ContactUs = () => {
                   defaultValue=""
                   className="message"
                   control={control}
-                  ref={register}
+                  refs={register}
                 />
                 {errors && errors.phone && (
                   <span className="text-danger">{errors.phone.message}</span>
@@ -92,7 +92,7 @@ const ContactUs = () => {
                   name="message"
                   defaultValue=""
                   control={control}
-                  ref={register}
+                  refs={register}
                   className="messages"
                 />
                 {errors && errors.message && (

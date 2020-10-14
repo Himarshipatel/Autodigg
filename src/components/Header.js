@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -57,37 +57,31 @@ const Header = () => {
           <img src={logo} alt="" className="logo" />
         </NavbarBrand>
 
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} className="tog-icon" />
 
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/" className="menulist text-white font-title">
+              <NavLink href="/" className="menulist  font-title">
                 HOW DOES IT WORKS?
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/" className="menulist text-white font-title">
+              <NavLink href="/" className="menulist font-title">
                 WHY US?
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/" className="menulist text-white font-title">
+              <NavLink href="/" className="menulist font-title">
                 CONTACT US
               </NavLink>
             </NavItem>
           </Nav>
 
-          <NavLink
-            href="/"
-            className="menulist text-white font-title text-left"
-          >
+          <NavLink href="/" className="menulist font-title">
             BLOG
           </NavLink>
-          <NavLink
-            href="/"
-            className="menulist text-white font-title text-left"
-          >
+          <NavLink href="/" className="menulist  font-title">
             DEALERS
           </NavLink>
 
