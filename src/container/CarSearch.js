@@ -32,7 +32,7 @@ const CarSearch = () => {
     carDetail: state.carSearchReducer.carDetail,
     carData: state.carSearchReducer.carmodal.carModalData,
   }));
-  console.log(carData);
+
   return (
     <>
       <Form onSubmit={handleSubmit(onSubmit)}>

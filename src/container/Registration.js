@@ -22,7 +22,6 @@ const Registration = () => {
 
   const dispatch = useDispatch();
   const onSubmit = (data) => {
-    console.log(data);
     dispatch(signupUser(data));
   };
   return (
@@ -33,7 +32,7 @@ const Registration = () => {
           <Col md={6} className="input">
             <FormGroup>
               <Controller
-                placeholder="Name"
+                placeholder="Username"
                 as={Input}
                 type="text"
                 name="name"

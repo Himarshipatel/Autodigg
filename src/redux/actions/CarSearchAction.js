@@ -1,13 +1,12 @@
 import axios from "axios";
-
+import { config } from "../../common";
 export const carMake = () => {
   return (dispatch) => {
     dispatch({ type: "CAR_MAKE_PENDING" });
     axios
-      .get("http://tasks.infynno.com/api/test/carMake")
+      .get(`${config.apiUrl}/carMake`)
 
       .then((res) => {
-        console.log(res);
         dispatch({
           type: "CAR_MAKE_SUCCESS",
           carDetail: res.data,
@@ -18,12 +17,11 @@ export const carMake = () => {
       });
   };
 };
-export const carModal = (himarshi) => {
-  console.log(himarshi);
+export const carModal = (id) => {
   return (dispatch) => {
     dispatch({ type: "CAR_MODAL_PENDING" });
     axios
-      .get(`http://tasks.infynno.com/api/test/carModel/${himarshi}`)
+      .get(`${config.apiUrl}/carModel/${id}`)
 
       .then((res) => {
         dispatch({

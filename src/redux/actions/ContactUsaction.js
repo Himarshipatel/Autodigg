@@ -1,16 +1,14 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-
+import { config } from "../../common";
 export const contactUs = (data) => {
-  console.log(data);
   return (dispatch) => {
     dispatch({ type: "CONTACT_US_PENDING" });
 
     axios
-      .post("http://tasks.infynno.com/api/test/contactUs", data)
+      .post(`${config.apiUrl}/contactUs`, data)
 
       .then((res) => {
-        console.log(res);
         dispatch({ type: "CONTACT_US_SUCCESS", contact: res.data });
 
         toast.success(res.data.message, {
