@@ -37,9 +37,13 @@
   }
 }
 .menubar {
-  color: white;
-  /* background-color: #2a3c46; */
   background-color: transparent !important;
+  padding: 0px 10px !important;
+  width: 100%;
+  z-index: 10;
+  /* color: white; */
+  /* background-color: #2a3c46; */
+  /* background-color: transparent !important; */
 }
 .menulist {
   font-size: 12px;
@@ -314,9 +318,9 @@
   .reverse {
     order: 2;
   }
-  .menubar {
+  /* .menubar {
     background-color: white;
-  }
+  } */
   .working {
     padding: 20px;
 
@@ -390,11 +394,11 @@
   background-color: #f8f8f8;
 }
 .register {
-  height: 500px;
+  height: 550px;
   background-image: url(./images/home-buyers-bg.jpg);
 }
 .login {
-  height: 500px;
+  height: 550px;
   background-image: url(./images/home-sellers-bg.jpg);
 }
 .dealer-title {
@@ -598,9 +602,9 @@ input.reg-message::placeholder {
 }
 
 @media screen and (max-width: 767px) {
-  .menubar {
+  /* .menubar {
     background-color: #f8f8f8 !important;
-  }
+  } */
   .logo-ad {
     border: 1px solid black;
     display: flex;
@@ -643,5 +647,19 @@ input.reg-message::placeholder {
   .sign-in-register {
     color: black;
     border: 1px solid black;
+  }
+  .register {
+    height: 560px;
+  }
+  .login {
+    height: 560px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .register {
+    height: 620px;
+  }
+  .login {
+    height: 620px;
   }
 }

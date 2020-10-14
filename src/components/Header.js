@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   Collapse,
   Navbar,
@@ -16,43 +16,49 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  // const [navBackground, setNavBackground] = useState(true);
-  // const [text, setText] = useState(false);
-  // const navRef = useRef();
-  // const navRefe = useRef();
+  const [navBackground, setNavBackground] = useState(false);
+  const [text, setText] = useState(false);
+  const navRef = useRef();
+  const navRefe = useRef();
 
-  // navRef.current = navBackground;
-  // navRefe.current = text;
+  navRef.current = navBackground;
+  navRefe.current = text;
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const show = window.scrollY < 70;
-  //     if (navRef.current !== show) {
-  //       setNavBackground(show);
-  //       // setText(show);
-  //     }
-  //   };
-  //   document.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     document.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 50;
+      if (navRef.current !== show) {
+        setNavBackground(show);
+        // setText(show);
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const show = window.scrollY > 70;
-  //     if (navRefe.current !== show) {
-  //       setText(show);
-  //     }
-  //   };
-  //   document.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     document.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 50;
+      if (navRefe.current !== show) {
+        setText(show);
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="home-page">
-      <Navbar expand="md" className="menubar">
+    <>
+      <Navbar
+        expand="md"
+        className="menubar"
+        style={{
+          backgroundColor: navBackground ? "white" : "transparent",
+        }}
+      >
         <NavbarBrand href="/">
           <img src={logo} alt="" className="logo" />
         </NavbarBrand>
@@ -78,10 +84,10 @@ const Header = () => {
             </NavItem>
           </Nav>
 
-          <NavLink href="/" className="menulist font-title">
+          <NavLink href="/" className="menulist font-title ">
             BLOG
           </NavLink>
-          <NavLink href="/" className="menulist  font-title">
+          <NavLink href="/" className="menulist  font-title ">
             DEALERS
           </NavLink>
 
@@ -90,7 +96,7 @@ const Header = () => {
           </NavbarText>
         </Collapse>
       </Navbar>
-    </div>
+    </>
   );
 };
 

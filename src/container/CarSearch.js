@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Col, Row, Input, Form, FormGroup, Button } from "reactstrap";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { carMake, carModal } from "../redux/actions/CarSearchAction";
@@ -89,10 +89,9 @@ const CarSearch = () => {
         <Row className="dropdown">
           <Col>
             <FormGroup>
-              <Controller
-                as={Input}
+              <Input
                 type="select"
-                name="carmodal"
+                name="carmodel"
                 defaultValue=""
                 control={control}
                 className="car-search-in"
@@ -103,18 +102,17 @@ const CarSearch = () => {
                   carData.results.carModel.map((item) => (
                     <option value={item.modelId}>{item.modelName}</option>
                   ))}
-              </Controller>
-              {errors && errors.carmodal && (
-                <span className="text-warning">{errors.carmodal.message}</span>
+              </Input>
+              {errors && errors.carmodel && (
+                <span className="text-warning">{errors.carmodel.message}</span>
               )}
             </FormGroup>
           </Col>
           <Col>
             <FormGroup>
-              <Controller
-                as={Input}
+              <Input
                 type="select"
-                name="carmake"
+                name="estimate"
                 defaultValue=""
                 control={control}
                 refs={register}
@@ -128,9 +126,9 @@ const CarSearch = () => {
                       {item.makeName}
                     </option>
                   ))}
-              </Controller>
-              {errors && errors.carmake && (
-                <span className="text-warning">{errors.carmake.message}</span>
+              </Input>
+              {errors && errors.estimate && (
+                <span className="text-warning">{errors.estimate.message}</span>
               )}
             </FormGroup>
           </Col>
@@ -138,10 +136,9 @@ const CarSearch = () => {
         <Row className="dropdown">
           <Col>
             <FormGroup>
-              <Controller
-                as={Input}
+              <Input
                 type="select"
-                name="carmodal"
+                name="miles"
                 defaultValue=""
                 control={control}
                 className="car-search-in"
@@ -152,18 +149,17 @@ const CarSearch = () => {
                   carData.results.carModel.map((item) => (
                     <option value={item.modelId}>{item.modelName}</option>
                   ))}
-              </Controller>
-              {errors && errors.carmodal && (
-                <span className="text-warning">{errors.carmodal.message}</span>
+              </Input>
+              {errors && errors.miles && (
+                <span className="text-warning">{errors.miles.message}</span>
               )}
             </FormGroup>
           </Col>
           <Col>
             <FormGroup>
-              <Controller
-                as={Input}
+              <Input
                 type="select"
-                name="carmake"
+                name="zipcode"
                 defaultValue=""
                 control={control}
                 refs={register}
@@ -177,9 +173,9 @@ const CarSearch = () => {
                       {item.makeName}
                     </option>
                   ))}
-              </Controller>
-              {errors && errors.carmake && (
-                <span className="text-warning">{errors.carmake.message}</span>
+              </Input>
+              {errors && errors.zipcode && (
+                <span className="text-warning">{errors.zipcode.message}</span>
               )}
             </FormGroup>
           </Col>
